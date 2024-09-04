@@ -1,0 +1,1 @@
+This web app allows you to predict the outcome of a hearing test based on your age and physical health score. Using a machine learning model trained on a dataset of hearing test results, the app will classify your test outcome as either Good or Bad. Enter your details below to get started.
