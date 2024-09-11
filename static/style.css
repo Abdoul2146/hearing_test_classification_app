@@ -1,51 +1,66 @@
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+    background-color: #f4f4f9;
 }
 
-.header {
+.navbar {
+    background-color: #333;
+    padding: 10px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-.header h1 {
-    font-size: 2.5em;
-    color: #333;
-    margin: 0;
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1rem;
 }
 
-.header h2 {
-    font-size: 1.2em;
-    color: #666;
+.navbar a:hover {
+    text-decoration: underline;
 }
 
+/* Title Section */
+.title {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.title h1 {
+    font-size: 2.5rem;
+    color: #0056b3;
+}
+
+.title h2 {
+    font-size: 1.5rem;
+    color: #007BFF
+}
+
+/* Main Form Container */
 .container {
+    width: 50%;
+    margin: auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 500px;
+    margin-bottom: 40px;
 }
 
-.description, .explanation {
-    margin-bottom: 20px;
-    font-size: 1em;
+.description {
+    font-size: 1.2rem;
     color: #555;
     line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .form-group {
     margin-bottom: 15px;
 }
+
 
 label {
     font-size: 1em;
@@ -76,7 +91,7 @@ input[type="number"]:focus {
     border-radius: 4px;
     font-size: 1em;
     cursor: pointer;
-    width: 100%;
+    width: 80%;
     margin-top: 10px;
     text-align: center;
     text-decoration: none;

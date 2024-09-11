@@ -2,14 +2,26 @@ from flask import Flask, render_template, request
 import joblib
 import numpy as np
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 # Load the trained model
 model = joblib.load('model/hearing_test_model.pkl')
 
-@app.route('/')
+@app.route('/predict')
 def index():
-    return render_template('index.html')
+   return render_template('app.html')
+
+@app.route('/')
+def landing():
+    return render_template('landing.html')
+
+@app.route('/features')
+def features():
+    return render_template('features.html')
+
+@app.route('/about')
+def about():
+    return render_template('about.html')
 
 
 @app.route('/predict', methods=['POST'])

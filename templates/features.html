@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <nav class="navbar">
+            <a href="/">Home</a>
+            <a href="/features">Features</a>
+            <a href="/about">About</a>
+            <a href="/predict">Classify</a>
+        </nav>
+    </header>
+
+    <div class="features-section">
+        <div class="feature">
+            <h3>Accurate Predictions</h3>
+            <img src="{{ url_for('static', filename='images/Accuracy.png') }}" alt="Feature 1">
+            <p>Our model ensures high accuracy in classifying hearing test results as either 'Good' or 'Bad'.</p>
+        </div>
+        <div class="feature">
+            <h3>User-Friendly Interface</h3>
+            <img src="{{ url_for('static', filename='images/UI_one.png') }}" alt="Feature 2">
+            <img src="{{ url_for('static', filename='images/UI_two.png') }}" alt="feature 4">
+            <img src="{{ url_for('static', filename='images/Accuracy.png')}}" alt="feature 5">
+            <p>A simple and intuitive interface that guides you through the process.</p>
+        </div>
+        <div class="feature">
+            <h3>Fast and Reliable</h3>
+            <img src="{{ url_for('static', filename='feature3.png') }}" alt="    ">
+            <p>Instant results based on your input, with top-notch performance.</p>
+        </div>
+    </div>
+
+</body>
+</html>

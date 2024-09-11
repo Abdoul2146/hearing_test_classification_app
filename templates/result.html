@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prediction Result</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<header>
+    <nav class="navbar">
+        <a href="/">Home</a>
+        <a href="/features">Features</a>
+        <a href="/about">About</a>
+        <a href="/predict">Classify</a>
+    </nav>
+</header>
+
 <body>
     <div class="container result-container">
         <h2>Your Hearing Test Result</h2>
@@ -17,7 +26,7 @@
             <p><strong>Explanation:</strong></p>
             <p>A "Good" result indicates that your hearing is within a normal range based on the input data. However, a "Bad" result suggests that your hearing may be impaired, and it is advisable to consult a healthcare professional for a comprehensive assessment.</p>
         </div>
-        <a href="/" class="submit-btn">Go Back</a>
+        <a href="/predict" class="submit-btn">Go Back</a>
     </div>
 </body>
 </html>
