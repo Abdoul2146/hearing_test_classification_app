@@ -4,10 +4,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f9;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .navbar {
-    background-color: #333;
+    background-color: #0056b3;
     padding: 10px;
     text-align: center;
 }
@@ -29,6 +32,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
 
 .intro-cover {
@@ -88,7 +92,6 @@ body {
 .features-section {
     padding: 50px;
     text-align: center;
-    background-color: #fff;
     z-index: 1;
     position: relative;
 }
@@ -101,6 +104,12 @@ body {
 
 .feature {
     margin-bottom: 30px;
+    padding: 20px;
+    display: inline-block;
+    background-color: rgba(52, 169, 236, 0.5);
+    color: #0056b3;
+    border-radius: 20px;
+    font-weight: 800;
 }
 
 .feature img {
@@ -113,18 +122,21 @@ body {
 .feature h3 {
     font-size: 1.5rem;
     margin-top: 10px;
-    color: black;
+    color: #0056b3;
+    visibility: visible;
 }
 
 .feature p {
     font-size: 1rem;
+    opacity: 1.5;
 }
 
 /* About Section */
 .about-section {
-    padding: 50px;
+    padding: 60px 20px 60px 20px ;
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: rgba(43, 147, 233, 0.5);
+    
 }
 
 .about-section h2 {
@@ -135,7 +147,8 @@ body {
 .about-section p {
     font-size: 1.2rem;
     margin-bottom: 20px;
-    color: #007BFF;
+    color: #0056b3;
+    font-weight: 600;
 }
 
 ul {
@@ -162,7 +175,7 @@ footer {
     background-color: #333;
     color: white;
     padding: 20px 20px 20px 20px;
-    margin-top: 150px;
+    margin-top: 200px;
     font-size: 1rem;
 }
 
